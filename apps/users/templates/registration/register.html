@@ -16,7 +16,7 @@
 
 {% block main_content %}
 
-  {% if user_form.errors or profile_form.errors %}
+  {% if (user_form.errors or profile_form.errors) %}
     <div class="alert alert-error">
       The following fields are required (optin is the checkbox in the last panel):
       <ol>
